@@ -1,0 +1,19 @@
+ 
+ Tạo server ảo có thể call API bằng json-server:
+B1: npm install -g json-server
+B2: vào thư mục project và tạo file db.json chứa CSDL mẫu
+- Lấy IPv4 bằng cách gõ câu lệnh ipconfig
+Ví dụ: 10.24.21.236
+B3: ở thư mục project đó chạy câu lệnh: chạy json-server db.json --watch -H 10.24.21.236
+
+Nếu bị lỗi đỏ khi chạy:
+
+Mở Window PowerShell dưới quyền admin sau đó chạy câu lệnh: Set-ExecutionPolicy Unrestricted
+Sau đó tắt toàn bộ giao diện lệnh trong VSCode và chạy lại:  json-server db.json --watch
+
+
+-------------
+Navigation
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native-stack
